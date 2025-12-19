@@ -1,0 +1,6 @@
+@DigitalBankLite.API_HostAddress = http://localhost:5105
+
+GET {{DigitalBankLite.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

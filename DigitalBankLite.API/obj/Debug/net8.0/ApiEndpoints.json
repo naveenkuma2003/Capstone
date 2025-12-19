@@ -1,0 +1,242 @@
+[
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AccountsController",
+    "Method": "GetAccounts",
+    "RelativePath": "api/Accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AccountsController",
+    "Method": "Deposit",
+    "RelativePath": "api/Accounts/{accountId}/deposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AccountsController",
+    "Method": "GetTransactions",
+    "RelativePath": "api/Accounts/{accountId}/transactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AccountsController",
+    "Method": "GetAllTransactions",
+    "RelativePath": "api/Accounts/transactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AdminController",
+    "Method": "ApproveCustomer",
+    "RelativePath": "api/Admin/customers/{id}/approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AdminController",
+    "Method": "GetPendingApprovals",
+    "RelativePath": "api/Admin/customers/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AdminController",
+    "Method": "GetAllServiceRequests",
+    "RelativePath": "api/Admin/servicerequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AdminController",
+    "Method": "UpdateServiceRequestStatus",
+    "RelativePath": "api/Admin/servicerequests/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "DigitalBankLite.API.DTOs.UpdateServiceRequestStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AdminController",
+    "Method": "DeleteServiceRequest",
+    "RelativePath": "api/Admin/servicerequests/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AdminController",
+    "Method": "GetHighValueTransactions",
+    "RelativePath": "api/Admin/transactions/highvalue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "threshold",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AuthController",
+    "Method": "DebugUsers",
+    "RelativePath": "api/Auth/debug",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DigitalBankLite.API.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DigitalBankLite.API.DTOs.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.AuthController",
+    "Method": "ResetAdminPassword",
+    "RelativePath": "api/Auth/reset-admin-password",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.ServiceRequestsController",
+    "Method": "CreateServiceRequest",
+    "RelativePath": "api/ServiceRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DigitalBankLite.API.DTOs.CreateServiceRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.ServiceRequestsController",
+    "Method": "GetMyRequests",
+    "RelativePath": "api/ServiceRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalBankLite.API.Controllers.TransfersController",
+    "Method": "Transfer",
+    "RelativePath": "api/Transfers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DigitalBankLite.API.DTOs.TransferDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
